@@ -1,0 +1,98 @@
+.add {
+  width: 70%;
+  margin-left: max(5vw, 25px);
+  margin-top: 50px;
+  color: #3e2f1c; /* Dark roast */
+  font-size: 16px;
+  background-color: #fffaf3; /* Light beige */
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Form structure */
+.add form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Image upload */
+.add-img-upload img {
+  width: 120px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input/textarea containers */
+.add-product-name,
+.add-product-description {
+  width: max(40%, 280px);
+}
+
+/* Input fields */
+.add-product-name input,
+.add-product-description textarea {
+  padding: 10px;
+  border: 1px solid #6f4e37; /* Coffee brown */
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #3e2f1c;
+  font-family: "Open Sans", sans-serif;
+  resize: none;
+  transition: border-color 0.3s ease;
+}
+
+.add-product-name input:focus,
+.add-product-description textarea:focus {
+  outline: none;
+  border-color: #c19a6b; /* Accent caramel */
+}
+
+/* Dropdown and price */
+.add-category-price {
+  display: flex;
+  color: #ffffff;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.add-category-price select,
+.add-category-price input {
+  max-width: 120px;
+  padding: 10px;
+  border: 1px solid #6f4e37;
+  border-radius: 8px;
+  background-color: #a67b5b;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.add-category-price input::placeholder {
+  color: white;
+  opacity: 1; /* ensures the color is solid, not faded */
+}
+
+.add-category-price select:hover,
+.add-category-price input:hover {
+  background-color: #c19a6b;
+}
+
+/* Submit Button */
+.add-btn {
+  max-width: 140px;
+  border: none;
+  padding: 10px;
+  background-color: #6f4e37;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #a67b5b;
+}
